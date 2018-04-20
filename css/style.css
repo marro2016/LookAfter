@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+body {
+  text-align: center;
+  background: linear-gradient(black, blue, black);
+
+  font-family: 'Open Sans';
+  margin: 0 auto;
+}
+
+#draggable {
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  color: blue;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  float: left;
+  margin: 20px;
+}
+
+#droppable {
+  border-radius: 50px;
+  width: 320px;
+  font-size: 11px;
+  height: 390px;
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.3);
+  float: right;
+  margin: 10px;
+  padding: 15px;
+  color: #ccccff;
+}
+
+
+.box1 {
+  background: #000033;
+  display: inline;
+  width: 580px;
+  height: 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+color: #e6e6ff;
+
+/* animation: name time delay */
+  animation: drive 5s 1s;
+  animation-fill-mode: both;
+  position: relative;
+}
+.box2 {
+  background: #00004d;
+  display: inline;
+  width: 290px;
+  height: 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+color: #e6e6ff;
+/* animation: name time delay */
+  animation: drive 10s 2s;
+  animation-fill-mode: both;
+  position: relative;
+}
+.box3 {
+  background: #000066;
+  display: inline-block;
+  width: 450px;
+  height: 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+color: #e6e6ff;
+/* animation: name time delay */
+  animation: drive 15s 3s;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.box4 {
+  background: #000080;
+  display: inline;
+  width: 350px;
+  height: 40px;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+color: #e6e6ff;
+/* animation: name time delay */
+  animation: drive 20s 4s;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+.box5 {
+  background: #0d00f2;
+  display: inline;
+  width: 180px;
+  height: 40px;
+  border-radius: 70px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+color: #cff2f2;
+/* animation: name time delay */
+animation: drive 25s 5s;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+@keyframes drive {
+  from{
+    right: 1000px;
+  }
+ 
+to{
+    left: 200px;
+  }
+}
+
